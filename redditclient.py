@@ -32,12 +32,12 @@ class RedditClient:
       logged_in: bool, we have a reddit_session cookie
     """
 
-    def __init__(self, host='http://www.reddit.com', cookie_file=None,
+    def __init__(self, host='https://www.reddit.com', cookie_file=None,
             user_agent=None, _http_user=None, _http_password=None):
         """Constructor.
 
         Args:
-          host: str, base URL of reddit site (default: http://www.reddit.com)
+          host: str, base URL of reddit site (default: https://www.reddit.com)
           cookie_file: str, optional path to file to save session cookie in
         """
         while host.endswith('/'):
